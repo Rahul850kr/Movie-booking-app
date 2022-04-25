@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Amount</title>
+    <style>
+      #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+      }
+      body{
+        background-color: navy;
+        background: url("https://www.technomusk.com/wp-content/uploads/2018/06/iStock_19377019_res.jpg") no-repeat;
+        background-size: cover;
+
+      }
+      #add-money{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 30%;
+        
+        margin: auto;
+        align-items: center;
+        justify-content: space-around;
+      }
+      input{
+        padding: 10px 30px;
+        background: rgba(0, 0, 0, 0.2);
+        color: white;
+      }
+      button{
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+        background-color: rgb(125, 92, 7);
+        color: white;
+        border-radius: 10px;
+      }
+      input::placeholder{
+        color: rgba(255, 255, 255, 0.53);
+      }
+      button:hover{
+        padding: 12px 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Add Money to wallet</h1>
+      <h1 id="wallet"></h1>
+      <!-- Display the wallet amount here inside h1 tag with id as "wallet". Note only amount, no extra text. Like 500 not Rs 500 -->
+    </div>
+    <div id="add-money">
+      <!-- input box for accepting money with id as "amount" -->
+      <!-- button with id as "add_to_wallet" -->
+      <!-- button with id as "book_movies" to go to movies.html -->
+
+      <input type="text" placeholder="enter amout" id="amount">
+      <button onclick="addedamount()" id="add_to_wallet">Add to wallet</button>
+      <a href="movies.html"><button id="book_movies">Book Movies</button></a>
+    </div>
+
+    
+  </body>
+</html>
+
+<script src="scripts/index.js"></script>
+
+
